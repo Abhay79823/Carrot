@@ -1,0 +1,684 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="carrot.js"></script>
+    </head>
+    <body>
+        <div class="flex justify-between px-8 py-3">
+            <img src="images/logo.png">
+            <div class="border border-blue-800 w-fit h-11 rounded-md">
+                <input type="text" placeholder="Search for items..." class=" pl-3 pr-44 h-10 outline-none rounded-md">
+                <select class="border-l border-blue-800 h-10 outline-none px-3">
+                    <option>All Categories</option>
+                    <option>Mens</option>
+                    <option>Womens</option>
+                    <option>Electories</option>
+                </select>
+
+                <button class="bg-blue-800 w-12 h-11 rounded-r-md">
+                    <i class="ri-search-line text-white"></i>
+                </button>
+            </div>
+                <ul class="flex items-center gap-8">
+                    <button class="group"><span class="font-semibold  hover:text-blue-500"><i class="ri-user-line"></i> Account</span>
+                        <div class="fixed hidden bg-white gap-2 px-6 py-2 flex flex-col border drop-shadow-2xl rounded-md group-hover:flex animate__animated animate__fadeInUp animate__faster">
+                            <a href="register.html" class="hover:text-blue-500">Register</a>
+                            <a href="checkout.html" class="hover:text-blue-500">Checkout</a>
+                            <a href="login.html" class="hover:text-blue-500">Login</a>
+                        </div>
+                    </button>
+                    <a href="wishlist.html" class="font-semibold hover:text-blue-500"><i class="ri-heart-line"></i> Wishlist</a>
+                    <a href="cart.html" class="font-semibold hover:text-green-500"><i class="ri-shopping-cart-2-line"></i> Cart</a>
+                </ul>
+        </div>
+        <hr class="mx-8 mt-4">
+        <div class="flex justify-between px-8 py-3">
+            <button class="border w-12 h-12 ">
+                <i class="ri-menu-2-fill text-xl"></i>
+            </button>
+
+            <div class="flex gap-8 justify-between">
+                <button>
+                    <a href="index.html" class="text-md font-semibold pt-4">Home</a>
+                </button>
+                
+                    <button class="group text-md "><span class="font-semibold hover:border-b-2 border-blue-600">Category </span> <i class="ri-arrow-down-s-line"></i>
+                    <div class="fixed  border-2 rounded-md py-2 flex gap-2 flex-col bg-white items-center hidden group-hover:flex ">
+                        
+                        <a href="#" class="px-6 hover:bg-slate-300">Shop Left Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Shop Right Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Full Width</a>
+                    </div>
+                 </button>
+
+                 <button class="group text-md "><span class="font-semibold hover:border-b-2 border-blue-600">Product </span> <i class="ri-arrow-down-s-line"></i>
+                    <div class="fixed flex gap-2 flex-col bg-white hidden group-hover:flex border-2 rounded-md py-2 ">
+                        <a href="#" class="px-6 hover:bg-slate-300">Product Left Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Product Right Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Product Full Width</a>
+                    </div>
+                 </button>
+
+                 <button class="group text-md "><span class="font-semibold hover:border-b-2 border-blue-600">Pages </span> <i class="ri-arrow-down-s-line"></i>
+                    <div class="fixed flex gap-2 flex-col bg-white hidden group-hover:flex border-2 rounded-md py-2 ">
+                        <a href="#" class="px-6 hover:bg-slate-300">About Us</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Contact Us</a>
+                        <a href="cart.html" class="px-6 hover:bg-slate-300">Cart</a>
+                        <a href="checkout.html" class="px-6 hover:bg-slate-300">Checkout</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Track Order</a>
+                        <a href="wishlist.html" class="px-6 hover:bg-slate-300">Wishlist</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Faq</a>
+                        <a href="login.html" class="px-6 hover:bg-slate-300">Login</a>
+                        <a href="register.html" class="px-6 hover:bg-slate-300">Register</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Policy</a>
+                    </div>
+                 </button>
+
+                 <button class="group text-md "><span class="font-semibold hover:border-b-2 border-blue-600">Blog </span> <i class="ri-arrow-down-s-line"></i>
+                    <div class="fixed flex gap-2 flex-col bg-white hidden group-hover:flex border-2 rounded-md py-2 ">
+                        <a href="#" class="px-6 hover:bg-slate-300">Left Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Right Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Full Width</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Detail Left Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Detail Right Sidebar</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Detail Full Width</a>
+                    </div>
+                 </button>
+
+                 <button class="group text-md "><span class="font-semibold hover:border-b-2 border-blue-600">Element </span> <i class="ri-arrow-down-s-line"></i>
+                    <div class="fixed flex gap-2 flex-col bg-white hidden group-hover:flex border-2 rounded-md py-2">
+                        <a href="#" class="px-6 hover:bg-slate-300">Products</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Typography</a>
+                        <a href="#" class="px-6 hover:bg-slate-300">Buttons</a>
+                        
+                    </div>
+                 </button>                
+            </div>
+
+            
+            
+               
+            <div class="border px-2 rounded-md"> 
+                <i class="ri-map-pin-line"></i>
+                <select class=" outline-none pr-6 items-center pt-2 divide  ">
+                    
+                        <option class="border">
+                            Current Location
+                        </option>
+                    
+                <option class="border border-4 border-blue-600 py-8  ">
+                        <a href="#">Los Angles</a>
+                </option>
+                <option>
+                    <a href="#">Chicago</a>
+                </option>
+                <option>
+                    <a href="#">Houston</a>
+                </option>
+                <option>
+                    <a href="#">Phoenix</a>
+                </option>
+                <option>
+                    <a href="#">San Diego</a>
+                </option>
+                </select>
+            </div>       
+                
+        </div>
+
+        
+        <hr>
+        <div class=" w-92 h-[520px] bg-slate-300 m-8 rounded-3xl ">
+            <img src="./images/land.jpg" class="w-[1400px] h-[520px] rounded-3xl">
+            
+        </div>
+
+        <div class="m-16 flex justify-between">
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#FFEAE9] rounded-full flex justify-center items-center">
+                        <img src="images/long-sleeve.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Shirt</h1>
+                    <p class="text-gray-600">(67 items)</p>
+                </div>
+                
+            </div>
+
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#FFF6EC] rounded-full flex justify-center items-center">
+                        <img src="images/cowboy-hat.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Hats</h1>
+                    <p class="text-gray-600">(80 items)</p>
+                </div>
+                
+            </div>
+
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#E2FDE2] rounded-full flex justify-center items-center">
+                        <img src="images/boot.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Boot</h1>
+                    <p class="text-gray-600">(32 items)</p>
+                </div>
+                
+            </div>
+
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#FFEAE9] rounded-full flex justify-center items-center">
+                        <img src="images/t-shirts.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Tops</h1>
+                    <p class="text-gray-600">(78 items)</p>
+                </div>
+                
+            </div>
+
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#FDE1F5] rounded-full flex justify-center items-center">
+                        <img src="images/vest.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Vest</h1>
+                    <p class="text-gray-600">(93 items)</p>
+                </div>
+                
+            </div>
+
+            <div class="w-48 h-32 bg-gray-100 rounded-3xl relative flex justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center absolute -top-8">
+                    <div class="w-16 h-16 bg-[#ECF0FF] rounded-full flex justify-center items-center">
+                        <img src="images/socks.png" class="w-10 ">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center absolute bottom-4 ">
+                    <h1 class="font-semibold">Shocks</h1>
+                    <p class="text-gray-600">(54 items)</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="m-20">
+            <div class="flex justify-between">
+                <div>
+                    <div class="font-bold text-2xl">New Arrivals</div>
+                    <div class="font-normal text-slate-500">Browse The Collection of Top Products.</div>
+                </div>
+                <div class="w-44 h-10 bg-gray-100 flex items-center rounded-md px-2 font-semibold ">501<span class="font-normal text-gray-600 mx-2">Days</span>00 : 00 : 00</div>
+            </div>
+            
+    <!--------------------------------------------- Clothes Section------------------------------------------------------------------------------------------------------------->
+            <div class="flex justify-between">
+                <div class="group border my-10 w-56 h-auto rounded-md">
+                    <div class="border-b  rounded-t-md relative">
+                        <img src="images/18.jpg" class="m-4 w-48 h-48 rounded-md group-hover:hidden">
+                        <div class="hidden relative group-hover:flex">
+                            <img src="images/19.jpg" class="w-56 h-56  rounded-md group-hover:ease-out">
+                            <div class="flex gap-2 absolute -bottom-8 left-8 hidden group-hover:flex bottom-4 animate__animated animate__slideInUp animate__faster	1400ms ">
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-checkbox-multiple-blank-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-shopping-cart-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+    
+    
+                            </div>
+                            
+                        </div>
+                        <div class="w-fit  h-fit bg-green-700 text-[12px] text-white  font-semibold px-2 absolute top-1 left-4 group-hover:top-5">50% Sale</div>
+                        
+    
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <div class="flex  justify-between">
+                            <div class="text-sm text-slate-400 font-medium">Women Tops</div>
+                            <div class="text-[#FD575D] -space-x-1">
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                            </div>
+                        </div>
+    
+                        <div class="text-md hover:text-blue-400">Colorful Top For Women</div>
+                        <div class="flex items-center gap-4 ">
+                            <div class="text-md font-bold">$6.00</div>
+                            <del class="text-sm text-gray-500">$9.00</del>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 ">
+                                <div class="w-7 h-7 border border-slate-400 flex justify-center items-center rounded-md">
+                                    <div class="w-5 h-5 bg-blue-800 rounded-md "></div>
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <div class=" w-5 h-5 bg-pink-400 rounded-md "></div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">M</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">L</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">XL</div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="group border my-10 w-56 h-auto rounded-md">
+                    <div class="border-b  rounded-t-md relative">
+                        <img src="images/30.jpg" class="m-4 w-48 h-48 rounded-md group-hover:hidden">
+                        <div class="hidden relative group-hover:flex">
+                            <img src="images/29.jpg" class="w-56 h-56  rounded-md group-hover:ease-out">
+                            <div class="flex gap-2 absolute -bottom-8 left-8 hidden group-hover:flex bottom-4 animate__animated animate__slideInUp animate__faster	1400ms ">
+
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-checkbox-multiple-blank-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-shopping-cart-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="w-fit  h-fit bg-[#7D76FF] text-[12px] text-white  font-semibold px-2 absolute top-1 left-4 group-hover:top-5">Trending</div>
+                    </div>
+
+                    <div class="p-4 space-y-2">
+                        <div class="flex  justify-between">
+                            <div class="text-sm text-slate-400 font-medium">Men T-shirt</div>
+                            <div class="text-[#FD575D] -space-x-1">
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line text-gray-400"></i>
+                            </div>
+                        </div>
+    
+                        <div class="text-md hover:text-blue-300">Blue T-shirt For Men</div>
+                        <div class="flex items-center gap-4 ">
+                            <div class="text-md font-bold">$11.00</div>
+                            <del class="text-sm text-gray-500">$22.00</del>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 ">
+                                <div class="w-7 h-7 border border-slate-400 flex justify-center items-center rounded-md">
+                                        <img src="images/28.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/30.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/31.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">M</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">XL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border my-10 w-56 h-auto rounded-md">
+                    <div class="  border-b  rounded-t-md relative">
+                        <img src="images/24.jpg" class="m-4 w-48 h-48 rounded-md group-hover:hidden">
+                        <div class="hidden relative group-hover:flex">
+                            <img src="images/25.jpg" class="w-56 h-56  rounded-md group-hover:ease-out">
+                            <div class="flex gap-2 absolute -bottom-8 left-8 hidden group-hover:flex bottom-4 animate__animated animate__slideInUp animate__faster	1400ms ">
+
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-checkbox-multiple-blank-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-shopping-cart-line"></i>
+                                </button>
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="p-4 space-y-2">
+                        <div class="flex  justify-between">
+                            <div class="text-sm text-slate-400 font-medium">Kids</div>
+                            <div class="text-[#FD575D] -space-x-1">
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line text-gray-400"></i>
+                                <i class="ri-star-s-line text-gray-400"></i>
+                            </div>
+                        </div>
+    
+                        <div class="text-md hover:text-blue-300">Pink T-shirt For Girl</div>
+                        <div class="flex items-center gap-4 ">
+                            <div class="text-md font-bold">$29.00</div>
+                            <del class="text-sm text-gray-500">$39.00</del>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 ">
+                                <div class="w-7 h-7 border border-slate-400 flex justify-center items-center rounded-md">
+                                        <img src="images/24.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/26.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/27.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">S</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">M</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group border my-10 w-56 h-auto rounded-md">
+                    <div class="  border-b  rounded-t-md relative">
+                        <img src="images/20.jpg" class="m-4 w-48 h-48 rounded-md group-hover:hidden">
+                        <div class="hidden relative group-hover:flex">
+                            <img src="images/21.jpg" class="w-56 h-56  rounded-md group-hover:ease-out">
+                            <div class="flex gap-2 absolute -bottom-8 left-8 hidden group-hover:flex bottom-4 animate__animated animate__slideInUp animate__faster	1400ms ">
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-checkbox-multiple-blank-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-shopping-cart-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+    
+    
+                            </div>
+                            
+                        </div>
+                        <div class="w-fit  h-fit bg-red-400 text-[12px] text-white  font-semibold px-2 absolute top-1 left-4 group-hover:top-5">New</div>
+                        
+    
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <div class="flex  justify-between">
+                            <div class="text-sm text-slate-400 font-medium">Shorts</div>
+                            <div class="text-[#FD575D] -space-x-1">
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                            </div>
+                        </div>
+    
+                        <div class="text-md hover:text-blue-400">Girl Nightdress Shorts</div>
+                        <div class="flex items-center gap-4 ">
+                            <div class="text-md font-bold">$57.00</div>
+                            <del class="text-sm text-gray-500">$62.00</del>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 ">
+                                <div class="w-7 h-7 border border-slate-400 flex justify-center items-center rounded-md">
+                                    <div class="w-5 h-5 bg-blue-800 rounded-md "></div>
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <div class=" w-5 h-5 bg-pink-400 rounded-md "></div>
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/32.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">M</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">L</div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="group border my-10 w-56 h-auto rounded-md">
+                    <div class="  border-b  rounded-t-md relative">
+                        <img src="images/22.jpg" class="m-4 w-48 h-48 rounded-md group-hover:hidden">
+                        <div class="hidden relative group-hover:flex">
+                            <img src="images/23.jpg" class="w-56 h-56  rounded-md group-hover:ease-out">
+                            <div class="flex gap-2 absolute -bottom-8 left-8 hidden group-hover:flex bottom-4 animate__animated animate__slideInUp animate__faster	1400ms ">
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-checkbox-multiple-blank-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-shopping-cart-line"></i>
+                                </button>
+    
+                                <button class="w-8 h-8 bg-white rounded-lg">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+    
+                    </div>
+                    <div class="p-4 space-y-2">
+                        <div class="flex  justify-between">
+                            <div class="text-sm text-slate-400 font-medium">T-shirt</div>
+                            <div class="text-[#FD575D] -space-x-1">
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                                <i class="ri-star-s-line"></i>
+                            </div>
+                        </div>
+    
+                        <div class="text-md hover:text-blue-400">Black T-shirt For Wpmen</div>
+                        <div class="flex items-center gap-4 ">
+                            <div class="text-md font-bold">$50.00</div>
+                            <del class="text-sm text-gray-500">$65.00</del>
+                        </div>
+    
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 ">
+                                <div class="w-7 h-7 border border-slate-400 flex justify-center items-center rounded-md">
+                                    <div class="w-5 h-5 bg-blue-800 rounded-md "></div>
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <div class=" w-5 h-5 bg-pink-400 rounded-md "></div>
+                                </div>
+                                <div class=" w-7 h-7 border-slate-400  flex justify-center items-center rounded-md hover:border">
+                                    <img src="images/22.jpg" class="w-6 h-6 rounded-md ">
+                                </div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">M</div>
+                                <div class="w-6 h-6 bg-gray-200 rounded-md flex items-center border justify-center text-sm text-gray-500 hover:border-black">L</div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between">
+                <div class="w-72 h-44 bg-gray-100 border border-gray-200 rounded-lg flex flex-col justify-center items-center px-4">
+                    <i class="ri-red-packet-line text-blue-800 text-5xl" ></i>
+                    <h2 class="text-lg font-bold">Product Packing</h2>
+                    <p class="text-md text-slate-400 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="w-72 h-44 bg-gray-100 border border-gray-200 rounded-lg flex flex-col justify-center items-center px-4">
+                    <i class="ri-customer-service-2-line text-blue-800 text-5xl" ></i>
+                    <h2 class="text-lg font-bold">24X7</h2>
+                    <p class="text-md text-slate-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="w-72 h-44 bg-gray-100 border border-gray-200 rounded-lg flex flex-col justify-center items-center px-4">
+                    <i class="ri-truck-line text-blue-800 text-5xl" ></i>
+                    <h2 class="text-lg font-bold">Delivery in 5 Days</h2>
+                    <p class="text-md text-slate-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="w-72 h-44 bg-gray-100 border border-gray-200 rounded-lg flex flex-col justify-center items-center px-4">
+                    <i class="ri-money-dollar-box-line text-blue-800 text-5xl" ></i>
+                    <h2 class="text-lg font-bold">Delivery in 5 Days</h2>
+                    <p class="text-md text-slate-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!----------About Us ------------------------------------------------------------------------------------------------------------------->
+        <div class="bg-gray-100  px-12">
+            <div class="w-full py-24 grid grid-cols-6  ">
+                <div class="col-span-2 space-y-4 pr-8">
+                    <img src="images/logo.png">
+                    <p class="text-gray-500">Carrot is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    <div class=" flex gap-2">
+                        <i class="ri-map-pin-line text-blue-600"></i>
+                        <p class="text-gray-500">51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.</p>
+                    </div>
+                    <div class=" flex gap-2">
+                        <i class="ri-mail-send-line text-blue-600"></i>
+                        <p class="text-gray-500">example@email.com</p>
+                    </div>
+                    <div class=" flex gap-2">
+                        <i class="ri-phone-line text-blue-600"></i>
+                        <p class="text-gray-500">+91 123 4567890</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 flex flex-col space-y-4 ">
+                    <h1 class="text-xl font-semibold">Company</h1>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">About Us</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Delivery Information</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Privacy Policy</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Terms & Conditions</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Contact Us</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Support Center</a>
+                </div>
+                <div class="bg-gray-100 flex flex-col space-y-4 ">
+                    <h1 class="text-xl font-semibold">Category</h1>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Fashion & Clothes</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Dairy & Bakery</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Fruits & Vegetable</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Snack & Spice</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Juice & Drinks</a>
+                    <a herf="#" class="text-gray-500 hover:text-blue-700">Fast Food</a>
+                </div>
+    
+                <div class="  col-span-2 space-y-4 ">
+                    <h1 class="text-xl font-semibold">Newsletter</h1>
+                    <p class="text-gray-500">Subscribe to get in touch.</p>
+                    
+                    <div class="relative">
+                        <input type="email" placeholder="Email address ...." class=" pl-3 w-full h-10 border border-slate-400 outline-none rounded-md">
+                        <button>
+                            <i class="ri-send-plane-fill text-xl absolute right-2 bottom-8"></i>
+                        </button>
+                    </div>
+                    <div class="pl-2">
+                        <button class="w-8 h-8 border border-slate-400 rounded-lg">
+                            <i class="ri-facebook-line"></i>
+                        </button>
+                        <button class="w-8 h-8 border border-slate-400 rounded-lg">
+                            <i class="ri-twitter-x-fill"></i>
+                        </button>
+                        <button class="w-8 h-8 border border-slate-400 rounded-lg">
+                            <i class="ri-dribbble-line"></i>
+                        </button>
+                        <button class="w-8 h-8 border border-slate-400 rounded-lg">
+                            <i class="ri-instagram-line"></i>
+                        </button>
+                    </div>
+    
+                    <div class="flex gap-4">
+                        <button class="w-fit px-2 py-1  bg-gray-700 flex gap-1 items-center rounded-md">
+                            <i class="ri-google-play-fill text-4xl text-white"></i>
+                            <div class="flex flex-col">
+                                <text class="text-[11px] text-white">GET IT ON</text>
+                                <text class="font-bold text-white">Google Play</text>
+                            </div>
+                        </button>
+    
+                        <button class="w-fit px-2 py-1  bg-gray-700 flex gap-1 items-center rounded-md">
+                            <i class="ri-apple-fill text-4xl text-white"></i>
+                            <div class="flex flex-col">
+                                <text class="text-[11px] text-white">DOWNLOAD ON</text>
+                                <text class="font-bold text-white">App Store</text>
+                            </div>
+                        </button>
+                    </div>
+    
+                </div>
+               
+                
+            </div>
+            <hr>
+            <div class="flex justify-between py-4">
+                <h1>© 2024 <span class="text-blue-700">Carrot</span>, All rights reserved.</h1>
+                <img src="images/payment.png">
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
